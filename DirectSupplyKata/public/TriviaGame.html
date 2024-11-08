@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Trivia</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="index.html">Home</a>
+  </nav>
+  
+    
+    <div id="quizPage" class="container page-container justify-content-center">
+
+    <!-- Theme and Questions -->
+    <div id="categoryText">Theme</div>
+    <div id="question">Question</div>
+    <!-- MCQ Answers -->
+    <div id="buttonContainer" class="">
+    <div id="questionButoons" class="row no-gutters justify-content-center"></div>
+      <div class=" col ">
+        <button id="mCQ1" data-value="0" type="button" class="btn main-button btn-block mcq-button">MC1</button>
+      </div>
+      <div class=" col ">
+        <button id="mCQ2" type="button" data-value="1" class="btn main-button btn-block mcq-button">MC2</button>
+
+      </div>
+      <div class="col">
+        <button id="mCQ3" data-value="2" type="button" class="btn main-button btn-block mcq-button">MC3</button>
+      </div>
+      <div class="col">
+        <button id="mCQ4" type="button" data-value="3" class="btn main-button btn-block mcq-button">MC4</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+
+
+  <!-- Initial Modal for setting up game category -->
+  <div class="modal fade " id="pickCategory" tabindex="-1" role="dialog" aria-labelledby="rules" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" >What category would you like to play?<br></h5>
+        </div>
+        <div class="modal-header my-header"><h5 id="alert"></h5></div>
+        <div class="modal-body">
+
+          <select id="dropDown" class="form-select" aria-label="Default select example">
+            <option value="0" selected>Choose A Category!</option>
+            <option value="1">Movies</option>
+            <option value="2">Video Games</option>
+            <option value="3">Mythology</option>
+          </select>
+         
+        </div>
+        <div class="modal-footer">
+          <button id="playButton" type="button" class="btn btn-secondary" >Play</button>
+          <a class="navbar-brand" href="index.html">
+            <button  type="button" class="btn btn-secondary"  >Home</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final Modal showing Final Score and option to submit leader board -->
+  <div class="modal fade " id="finalScoreModal" tabindex="-1" role="dialog" aria-labelledby="rules" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title score-report" >Your Score!</h5>
+   
+        </div>
+        <div class="modal-body">
+
+          <div id="scoreReport" class ="score-report">Your place holder </div>
+          <div class ="score-report">Good Job!!</div>
+          <div class="score-report">Submit Your Score to the LeaderBoard!</div>
+          <div class="form-group bmd-form-group"> 
+            <label for="inputName" class="bmd-label-floating">Nickname</label>
+            <input type="text" class="form-control" id="inputName">
+          </div>
+
+         
+        </div>
+        <div class="modal-footer">
+          <a class="navbar-brand" href="index.html">
+            <button  type="button" class="btn btn-secondary"  >Home</button>
+          </a>
+         
+          <button id="submitScoreBTN" type="button" class="btn btn-secondary" >Submit Score</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js?useEmulator=true"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>Trivia</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Trivia</a>
+  </nav>
+  
+    
+    <div id="mainPage" class="container page-container justify-content-center">
+
+    <!-- Title -->
+    <div id="titleText">Trivia Bash</div>
+
+    <!-- Main buttons: how to get anywhere else in the app -->
+    <div id="buttonContainer" class="">
+    <div id="mainButtons" class="row no-gutters justify-content-center"></div>
+      <div class="col">
+        <a href="TriviaGame.html">
+          <button id="playButton" type="button" class="btn main-button btn-block" >Play</button>
+        </a>
+      </div>
+      <div class="col">
+        <button id="rulesButton" type="button" class="btn main-button btn-block" data-toggle="modal" data-target="#rulesModal">Rules</button>
+      </div>
+      <div class="col">
+        <a href="LeaderBoard.html">
+          <button id="leaderButton" type="button" class="btn main-button btn-block">Leader Board</button>
+        </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+
+  <div class="modal fade " id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="rules" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" >Rules:</h5>
+   
+        </div>
+        <div class="modal-body">
+
+          <div>Rules Place holder</div>
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js?useEmulator=true"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
