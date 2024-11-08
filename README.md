@@ -1,2 +1,3 @@
 # Trivia-Bash
-Small Trivia Game using JS and Open Trivia Data base 
+# Sml Trivia Game using JavaScript, Open Trivia Data Base, and firebase for hosting and firestore. 
+# 
